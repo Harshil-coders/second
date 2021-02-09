@@ -1,0 +1,206 @@
+#ha{
+    width: 800px;/*changes the width*/
+    height: 100px;/*changesthe heigth*/
+    background-color: rgb(255, 0, 0); /*changes background color*/
+    color: rgb(218, 221, 18);/*changes text color*/
+    font-family: bahnschrift; /*changes font family*/
+    font-size: 22px; /*changes font size*/
+    font-style: italic;/*changes font style italic and all*/
+    border-color: rgb(10, 10, 10); /*changes border color*/
+    border-width: 6px;/*changes background width wouldnt work with border-style: solid;*/
+    border-style: solid;/*see before line*/
+    /* or we can write for borders  1 line everything*/
+    border: black 22px solid;
+    border-radius: 30px; /*makes kinda circle*/
+   
+}
+#h{
+    border-top:green 6px solid ;/*changes  only the direction border color*/
+    border-left:rgb(230, 125, 6) 6px solid ;/*changes  only the direction border color*/
+    border-bottom:rgb(216, 7, 7) 6px solid ;/*changes  only the direction border color*/
+    border-right:rgb(6, 218, 233) 6px solid;/*changes  only the direction border color*/
+    font-family: bahnschrift; /*changes font family*/
+    font-size: 22px; /*changes font size*/
+    border-top-left-radius: 2px;/*changes  only the direction border radius*/
+    border-bottom-left-radius:6px ;/*changes  only the direction border radius*/
+    border-top-right-radius:10px;/*changes  only the direction border radius*/
+    border-bottom-right-radius: 14px;/*changes  only the direction border radius*/  
+    
+
+
+
+}
+#hh{
+    background-image: url(https://static.javatpoint.com/htmlpages/images/html-tutorial.png);/*changes the background but it repeats the image many times to resolve this problem see the next lines*/
+    width: 250px;/*changes the width*/
+    height: 300px;/*changesthe heigth*/
+    background-repeat:no-repeat ;/*doesnt repeat a image we can make keep repeating at x repeat-x and y repeat-y */
+    background-position: center center;/*changes background images position*/
+    border: aquamarine 6px solid;
+    color: red;/* text colorcolor*/
+    text-align: center;/*aligns the text*/
+    font-family: bahnschrift;
+    font-style: bold;
+    font-size: 22px;
+  
+
+}  
+body{
+    background-color:yellow;
+    font-family: bahnschrift;
+    color:red;
+}
+
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            
+        }
+
+        .item {
+            border: 3px solid grey;
+
+            background: rgb(248, 238, 238);
+        }
+
+        #fruit {
+            float: right;/*floats the text or image into the direction width is needed if you want to make them equally dividethen give the width around 50%*/
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;/*if anything overlaps another thing then type clear:and the direction the float is overlaping the element or we can clear:both;*/
+            clear: left;
+            width: 100%;
+        }
+
+        p, h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 455px;
+        }
+        .btn{
+            cursor: pointer; /* changes the cursor shape*/
+            color:yellow;
+            background-color: red;
+        }
+        #ah:hover{ /* when the cursor is on element then do............. */
+            background-color: rgb(21, 255, 0)
+            
+        }
+        #ah{
+            text-decoration: none;/* makes the underline below that invisible*/
+            background-color: red;
+            color: yellow;
+        }
+        /* a:visited{ /* when the link inside the href is visited and you come back then it
+            background-color: rgb(255, 136, 0);
+        } */
+
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;/* when the float is used then it makes the background overlap to stop this type this command */
+        }
+        .navbar li{
+            float:left;
+            list-style: none; /* changes the style kinda the symbol*/
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 80px;
+        }
+        .navbar input{
+            border: 2px solid blank;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 160px;
+        }
+        .box{
+            display: inline-block;
+            width:180px;
+            height: 180px;
+            border:3px solid rgb(0, 60, 255);
+            
+        }
+        #box2{
+            position:relative;
+            left: 600px;
+        }
+        #box1 {
+            position:fixed;
+            right: 3px;  
+            top:70px
+         }
+         #box3{
+             position: absolute;
+             left:30px;
+         }
+         .ccc{
+             border:4px red solid;
+             height: 400px;
+            display: flex;/* very useful can change directions very easily and neatly*/
+
+            /* Flex properties */
+
+            flex-direction: row;/* makes the items in that div or something to a particular direction row  ,column , row reverse means that in the other side it starts that row and same to the column  */
+
+             flex-wrap:wrap;/*  makes your websit resonsive it wraps and divides itself its default is no-wrap and there is wrap-reverse which wraps the items in the opposite direction*/
+
+             /* shorthand for both flex-direction and flex-wrap in same line */
+             /* flex-flow:direction and then wrap; */
+
+            justify-content:center ; /*tells the text should it be center or start or end . so center makes it into the center of the same line .next there is space-between which means to make equal space between the boxes(does not include the corners) next is space evenlywhich means to make equal space between the boxes and the start and the end of the same block element try it yourself if you do not understand! next is space-around which means that any box's  all direction is equal space          horizontally!!!!!!!!*/
+            
+            align-items: center ; /*  makes the text vertically center means the cener of the container or div in which it is inside and then next flex-start makes it into the upper part of the container . next flex-end makes it into the down part of the container  */
+            
+         }
+         .tem{
+            border:rgb(0, 255, 42) 4px solid;
+            color:black;
+            width:200px;
+            height: 200px;
+            margin: 10px;
+         }
+         
+        /* display: will make it inline block or inline-block */
+        /* inline is on the same line two elements  . You can t change width here EX: span */
+        /* block is on the same line only one element */
+        /* in;ine-block is used if you want it in same line two elements and change the width */
+
+        /* margin:auto makes same margin through all the directions  */
+
+        /* position  is static(default) , relative , absolute , fixed , sticky*/
+        /* relative: it changes the position of the element from the defaut position and leaves the space */
+        /* absolute:it changes the position of the element from the starting position in which what element it is inside and leaves the space */
+    /* fixed , sticky are sticked and fixed in one place only even though the user scrolls the page */
